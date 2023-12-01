@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 Task 1</title>
+    <style>
+      @import "customfont.css";
+      * {
+        position: relative;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      body {
+        background-color: white;
+        font-family: MonaspaceArgon;
+        color: brown;
+        margin: 5px;
+        padding: 5px;
+        animation-name: mess;
+      }
+      header {
+        text-align: center;
+        padding: 0 10px;
+        color: brown;
+        font-weight: 800;
+        animation-name: mess;
+      }
+      ul {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+        animation-name: mess;
+      }
+      li {
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 20px;
+        animation-name: mess;
+      }
+      li a {
+        text-decoration: none;
+        color: brown;
+      }
+      section {
+        padding: 12px 20px;
+        font-size: 17px;
+        animation-name: mess;
+      }
+      p {
+        font-size: 15px;
+        padding-left: 30px;
+        animation-name: mess;
+      }
+      article {
+        font-size: 10px;
+        padding-left: 30px;
+        animation-name: mess;
+      }
+      img {
+        padding-left: 30px;
+        width: 300px;
+        animation-name: mess;
+      }
+      input[type="text"] {
+        width: 100%;
+        display: block;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        max-width: 500px;
+        animation-name: mess;
+      }
+      img {
+        animation-name: flying-cake;
+      }
+      @keyframes flying-cake {
+        0% {
+          left: 0px;
+          top: 0px;
+        }
+        45% {
+          left: 75dvw;
+          top: 0px;
+        }
+        55% {
+          left: 75dvw;
+          top: 0px;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+        }
+      }
+      @keyframes mess {
+        0% {
+          /* background-color: red; */
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          /* background-color: yellow; */
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          /* background-color: blue; */
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          /* background-color: green; */
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          /* background-color: red; */
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello world!</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/exercise1task1.html">Homepage</a></li>
+        <li>Products</li>
+        <li>Community</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+    <br />
+    <section>First</section>
+    <p>Hi! How are you doing? This is the first paragraph!</p>
+    <article>
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+    <section>Second</section>
+    <p>This is the second paragraph</p>
+    <img src="cake.jpeg" alt="a cake" />
+    <section>Last</section>
+    <p>And this is the last!</p>
+    <form action="Contact Us!">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..." />
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..." />
+    </form>
+    <footer>Leo</footer>
+  </body>
+</html>
